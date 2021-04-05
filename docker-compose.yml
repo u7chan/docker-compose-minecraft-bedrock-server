@@ -1,0 +1,24 @@
+version: '3'
+services:
+  debian:
+    tty: true
+    stdin_open: true
+    image: u7chan/minecraft-bedrock-server
+    container_name: 'my-world'
+    build:
+      context: ./debian
+      args:
+        VERSION: 1.16.210.06
+    ports:
+      - 19132:19132/udp
+    volumes:
+      - ./data:/home/bedrock-server/data
+    environment:
+      SERVER_NAME: 'my-server'
+      # To restore, use the same name as 'data/restore/'.
+      LEVEL_NAME: 'my-world'
+      ONLINE_MODE: 'false'
+      DIFFICULTY: 'hard'
+      #LEVEL_SEED:
+      LEVEL_TYPE: 'default'
+      MAX_PLAYERES: 5
