@@ -1,5 +1,8 @@
 #!/bin/sh
+BACKUP_SCRIPT=backup.sh
 RESTORE_SCRIPT=restore.sh
+
+sh $BACKUP_SCRIPT
 
 if [ -e $RESTORE_SCRIPT ]; then 
   sh $RESTORE_SCRIPT
