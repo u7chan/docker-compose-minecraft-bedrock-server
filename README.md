@@ -43,5 +43,5 @@ The world data will be copied to `data/backup`.
 1. Change 'LEVEL_NAME' in docker-compose.yml to the same name as under 'data/restore/'.
 
 2.
-  docker-compose up -d
+  $ docker-compose up -d
 ```
