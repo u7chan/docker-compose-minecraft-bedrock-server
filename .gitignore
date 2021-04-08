@@ -1,2 +1,2 @@
 data/restore/*
-!data/restore/.gitkeep
+data/backup/*.zip
