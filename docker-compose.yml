@@ -8,7 +8,7 @@ services:
     build:
       context: ./debian
       args:
-        VERSION: 1.18.2.03
+        VERSION: 1.18.32.02
     ports:
       - 19132:19132/udp
     volumes:
@@ -16,7 +16,7 @@ services:
     environment:
       SERVER_NAME: 'my-server'
       # To restore, use the same name as 'data/restore/'.
-      LEVEL_NAME: 'my-world'
+      LEVEL_NAME: 'una-survive'
       ONLINE_MODE: 'false'
       DIFFICULTY: 'hard'
       #LEVEL_SEED:
